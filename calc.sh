@@ -17,14 +17,19 @@ case $ch in
 
 
 1)sum=`expr $n1 + $n2`
-echo "Sum ="$sum;;
+echo "Sum ="$sum
+break;;
 2)sub=`expr $n1 - $n2`
-echo "Sub = "$sub;;
+echo "Sub = "$sub
+break;;
 3)mul=`expr $n1 \* $n2`
-echo "Mul = "$mul;;
+echo "Mul = "$mul
+break;;
 4)div=`echo $n1 / $n2 | bc -l`
-echo "Div = "$div;;
-*)echo "Invalid choice";;
+echo "Div = "$div
+break;;
+*)echo "Invalid choice"
+break;;
 esac
 echo "Do u want to continue ?"
 read i
